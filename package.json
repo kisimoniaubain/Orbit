@@ -1,0 +1,28 @@
+{
+    "name": "orbit",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@stripe/react-stripe-js": "^7.0.1",
+        "@stripe/stripe-js": "^10.2.1",
+        "antd": "6.7.0",
+        "bootstrap": "^5.3.3",
+        "bootstrap-icons": "^1.13.2",
+        "lucide-react": "^0.469.0",
+        "react": "^18.3.1",
+        "react-bootstrap": "^2.10.10",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.28.0",
+        "stripe": "^23.1.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.4",
+        "vite": "^5.4.11"
+    }
+}

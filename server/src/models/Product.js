@@ -1,0 +1,25 @@
+const mongoose = require('mongoose')
+const ProductSchema = new mongoose.Schema({
+  name: String,
+  tagline: String,
+  description: String,
+  category: String,
+  categoryId: String,
+  technologies: [String],
+  priceType: { type: String, enum: ['free', 'premium'], default: 'free' },
+  price: Number,
+  rating: Number,
+  reviews: Number,
+  downloads: Number,
+  version: String,
+  license: String,
+  responsive: Boolean,
+  featured: Boolean,
+  published: { type: Boolean, default: true },
+  tags: [String],
+  demoUrl: String,
+  downloadUrl: String,
+  image: String,
+  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+}, { timestamps: true })
+module.exports = mongoose.model('Product', ProductSchema)
